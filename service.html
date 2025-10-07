@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SERVICE</title>
+  <link rel="stylesheet" href="static.css"/>
+  <style>
+body {
+      background-color:  rgb(255, 217, 1) ;
+    }
+    
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    main.service-area {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .service-area h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .service-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .service-item img {
+      max-width: 80px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .service-item h3 {
+      margin: 0 0 10px 0;
+      color: #222;
+    }
+    .service-item p {
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    .contact-section {
+      margin-top: 40px;
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      border-radius: 8px;
+    }
+    .contact-section p {
+      margin: 0 0 10px;
+    }
+    .contact-section a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background:black;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+      <div class="logo">
+        <img src="audio.jpg" alt="logo" width="150">
+    <h5>AUDIO NATION</h5>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="product.html">PRODUCT</a></li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="service-area">
+    <h1>Headphone Repair & Service</h1>
+    <div class="service-list">
+      <div class="service-item">
+        <img src="wire.png" alt="Wire Repair"/>
+        <h3>Wire & Cable Repair</h3>
+        <p>Fix broken cords, replace damaged wires, and restore full audio connectivity.</p>
+      </div>
+      <div class="service-item">
+        <img src="jack.jpg" alt="Jack Replacement"/>
+        <h3>Jack & Plug Replacement</h3>
+        <p>Replace faulty 3.5mm or USB‑C jacks so your headphone connects properly.</p>
+      </div>
+      <div class="service-item">
+        <img src="silent.jpg" alt="One Side Not Working"/>
+        <h3>One or Both Sides Silent</h3>
+        <p>Troubleshoot speaker issues when only one side produces sound.</p>
+      </div>
+      <div class="service-item">
+        <img src="headband.jpg" alt="Headband Repair"/>
+        <h3>Headband & Hinge Repair</h3>
+        <p>Repair or replace broken hinges, headbands or support frames.</p>
+      </div>
+      <div class="service-item">
+        <img src="battery.png" alt="Battery/Charging"/>
+        <h3>Battery & Charging Issues</h3>
+        <p>Resolve battery drain, charging problems, or wireless power issues.</p>
+      </div>
+      <div class="service-item">
+        <img src="cusion.png" alt="Earpad Replacement"/>
+        <h3>Earpad / Cushion Replacement</h3>
+        <p>Replace worn out cushions for comfort and better sound isolation.</p>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <p>Got a headphone issue not listed here? Let us know!</p>
+      <p><a href="mailto:support@audionation.com">support@audionation.com</a> | Call us: +91‑XXXXXXXXXX</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Audio Nation. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="static.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="stylesheet" href="icon.css">
+
+  <style>
+    body {
+    
+      background: #ffda2d;
+}
+    form {
+      background: #fff;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+       h6 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #000000;
+    }
+
+    form p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #222;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #f77f00;
+    }
+
+    .socials {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .socials p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .socials a {
+      text-decoration: none;
+      font-size: 24px;
+      margin: 0 12px;
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      line-height: 44px;
+      border-radius: 50%;
+      color: #333;
+      
+    }
+
+    .socials a:hover {
+      color: white;
+    }
+
+    .instagram:hover {
+      background-color: #E1306C;
+    }
+
+    .facebook:hover {
+      background-color: #1877F2;
+    }
+
+    .twitter:hover {
+      background-color: #1DA1F2;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+    
+      }
+    footer {
+      background:rgb(0, 0, 0);
+      color: #f5eeee;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+       <img src="audio.jpg" alt="logo" width="150">
+      <h5>AUDIO NATION</h5>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="product.html">PRODUCT</a></li>
+        <li><a href="service.html">SERVICE</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <form>
+    <h6>CONTACT FORM</h6>
+    <p>Please fill all entries.</p>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <label for="subject">Subject:</label>
+    <select id="subject" name="subject" required>
+      <option value="">-- Select --</option>
+      <option value="Product Inquiry">Product Inquiry</option>
+      <option value="General Inquiry">General Inquiry</option>
+      <option value="Technical Support">Technical Support</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <div class="socials">
+    <p>Follow us:</p>
+    <a href="https://www.instagram.com/" target="_blank" class="instagram" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/" target="_blank" class="facebook" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://twitter.com/" target="_blank" class="twitter" title="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  <footer>
+    <p>© 2025 Audio Nation. All rights reserved.</p>
+  </footer>
+  </div>
+</body>
+</html>
